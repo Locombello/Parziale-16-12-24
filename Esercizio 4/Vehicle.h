@@ -28,7 +28,7 @@ public:
 
     void setBaseFee(double baseFee);
 
-    virtual ~Vehicle() = 0;
+    virtual ~Vehicle() = default;
 
     virtual void print() = 0;
 

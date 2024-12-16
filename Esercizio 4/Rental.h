@@ -13,18 +13,24 @@
 
 class Rental {
 private:
-    std::string data;
-    std::vector<std::unique_ptr<Vehicle>> vehicles;
+    std::string date;
+    std::vector<std::unique_ptr<Vehicle> > vehicles;
 
 public:
-    Rental(const std::string& data);
+    Rental(const std::string &data);
+
+    const std::string& get_date() const;
+
+    void set_date(const std::string &date);
+
     void addVehicle(std::unique_ptr<Vehicle> vehicle);
+
+    void removeVehicle(int index);
 
     double calculateTotalAmount() const;
 
     void print() const;
 };
-
 
 
 #endif //RENTAL_H
