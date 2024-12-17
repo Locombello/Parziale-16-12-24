@@ -3,4 +3,8 @@ project(Esercizio_5)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(Esercizio_5 main.cpp)
+add_executable(Esercizio_5 main.cpp
+        Credentials.cpp
+        Credentials.h
+        Handler.cpp
+        Handler.h)
