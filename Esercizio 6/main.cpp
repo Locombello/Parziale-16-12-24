@@ -31,9 +31,9 @@ int main() {
     l.registerObserver(&gps);
     l.registerObserver(&notifier);
 
-    a.addDevice(t);
-    a.addDevice(s);
-    a.addDevice(l);
+    a.addDevice(&t);
+    a.addDevice(&s);
+    a.addDevice(&l);
 
     a.updatePosition(0, p3);
     a.updatePosition(1, p1);

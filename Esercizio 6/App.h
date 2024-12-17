@@ -12,10 +12,10 @@
 
 class App {
 private:
-    std::vector<Device> devices;
+    std::vector<Device *> devices;
 
 public:
-    void addDevice(const Device& device);
+    void addDevice(Device* device);
 
     void updatePosition(int index, const Position &position);
 };
