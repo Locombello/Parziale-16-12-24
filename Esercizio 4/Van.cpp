@@ -27,13 +27,13 @@ void Van::setM3Fee(double m3Fee) {
     this->m3Fee = m3Fee;
 }
 
-void Van::print() {
+void Van::print() const {
     std::cout << "Van " << plate << std::endl;
     std::cout << "Seats: " << seats << std::endl;
     std::cout << "capacity: " << capacity << std::endl;
     std::cout << "Fee: " << baseFee << " + " << capacity << " * " << m3Fee << " = " << calculateFee() << std::endl;
 }
 
-double Van::calculateFee() {
+double Van::calculateFee() const {
     return baseFee + capacity * m3Fee;
 }

@@ -10,12 +10,12 @@
 Motorcycle::Motorcycle(const std::string &plate, int seats, double fee): Vehicle(plate, seats, fee) {
 }
 
-void Motorcycle::print() {
+void Motorcycle::print() const {
     std::cout << "Motrcycle " << plate << std::endl;
     std::cout << "Seats: " << seats << std::endl;
     std::cout << "Fee: " << calculateFee() << std::endl;
 }
 
-double Motorcycle::calculateFee() {
+double Motorcycle::calculateFee() const {
     return baseFee;
 }

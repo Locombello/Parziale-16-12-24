@@ -13,9 +13,9 @@ class Motorcycle : public Vehicle {
 public:
     Motorcycle(const std::string &plate, int seats, double fee);
 
-    void print() override;
+    void print() const override;
 
-    double calculateFee() override;
+    double calculateFee() const override;
 };
 
 

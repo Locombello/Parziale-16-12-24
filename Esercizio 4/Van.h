@@ -23,9 +23,9 @@ public:
 
     void setM3Fee(double m3Fee);
 
-    void print() override;
+    void print() const override;
 
-    double calculateFee() override;
+    double calculateFee() const override;
 };
 
 

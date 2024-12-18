@@ -18,9 +18,9 @@ public:
 
     void setSeatFee(double seatFee);
 
-    void print() override;
+    void print() const override;
 
-    double calculateFee() override;
+    double calculateFee() const override;
 };
 
 

@@ -18,12 +18,12 @@ void Car::setSeatFee(double seatFee) {
     this->seatFee = seatFee;
 }
 
-void Car::print() {
+void Car::print() const {
     std::cout << "Car " << plate << std::endl;
     std::cout << "Seats: " << seats << std::endl;
     std::cout << "Fee: " << baseFee << " + " << seats << " * " << seatFee << " = " << calculateFee() << std::endl;
 }
 
-double Car::calculateFee() {
+double Car::calculateFee() const {
     return baseFee + seatFee * seats;
 }
